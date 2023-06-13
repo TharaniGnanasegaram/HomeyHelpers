@@ -11,7 +11,10 @@ const serviceProviderSchema = new Schema({
     username: { 
         type: String, 
         required : [true, 'Please provide a username'],
-        unique:  [true, 'Username already exists. Please provide a new username']
+        unique: {
+            value: true,
+            message: 'Username already exists. Please provide a new username'
+          }
     },
 
     password: { 
