@@ -11,11 +11,11 @@ function Menus() {
             <div>
 
                 <div class="titleHeadingStyle">
-                    <Link to="/" > <img id="logoimg" src="logo1.png" ></img> </Link>
+                    <Link to="/" > <img id="logoimg" src="logo4.png" ></img> </Link>
                 </div>
 
                 <div>
-                    <h1 id="titleName">Homey Helpers</h1>
+                    {/* <h1 id="titleName">Homey Helpers</h1> */}
                 </div>
 
                 <nav class="nav">
