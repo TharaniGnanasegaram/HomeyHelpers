@@ -9,12 +9,12 @@ function HomePage() {
 
     const navcustomer = async (e) => {
         e.preventDefault();
-        navigate(`/customerportal`);
+        navigate(`/customerregister`);
     }
 
     const navservicepro = async (e) => {
         e.preventDefault();
-        navigate(`/serviceproviderportal`);
+        navigate(`/serviceproviderregister`);
     }
 
 

@@ -77,8 +77,16 @@ body{
     max-width: 100%;
 }
 
+.servhomeimg{
+    max-width: 80%;
+}
+
 .serproimg{
     max-width: 90%;
+}
+
+.serprologinimg{
+    max-width: 70%;
 }
 
 .homeimgs{
@@ -86,15 +94,32 @@ body{
     max-height: 250px;
 }
 
+.serhomeimgs{
+    max-width: 90%;
+    max-height: 550px;
+}
+
 .buttonDiv {
     display: flex;
     justify-content: space-around;
-    
+}
+
+.buttonDivService {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttonDivOut {
     margin-top: 100px;
     width: 70%;
+    margin: auto;
+}
+
+.buttonDivOutService {
+    margin-top: 100px;
+    width: 95%;
     margin: auto;
 }
 
@@ -125,6 +150,38 @@ body{
 }
 
 
+.updateServiceButton {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans - serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    background-color: #1c4d09;
+    color: rgb(240, 238, 230);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px;
+    width: 30%;
+}
+
+.cancelupdateServiceButton{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans - serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    background-color: #6b1d09;
+    color: rgb(240, 238, 230);
+    padding: 10px;
+    border-color: #240903;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px;
+    width: 30%;
+}
+
+
+.MuiFormHelperText-root {
+    color: #cc0d1d !important;
+  }
+  
 .buttonstyle:hover{
     background-color: #70170b;
     border-color: rgb(145, 42, 8);
@@ -161,8 +218,16 @@ body{
 
   .twocolumns{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     margin: 3%;
+  }
+
+  .twocolumnslogin{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3%;
+    align-items: center;
+    justify-content: center;
   }
 
   #linehr{
@@ -186,6 +251,15 @@ body{
     margin-right: 15px;
 }
 
+.addserviceformdiv  {
+    width: 50%;
+    font-size: 20px;
+    background-color: #c4c2bb;
+    border-radius: 15px;
+    padding: 15px 0px 10px 0px;
+    margin: auto;
+}
+
 #formhead{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
@@ -193,8 +267,71 @@ body{
     color: rgb(121, 28, 28);
 }
 
+#editformhead{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px;
+    font-weight: 50;
+    color: rgb(121, 28, 28);
+    padding-top: 30px;
+}
+
+#editformsubhead{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px;
+    font-weight: 50;
+    color: rgb(121, 28, 28);
+    padding-top: 5px;
+}
+
 #topLine {
     height: 10px;
     background-color: #ee7e51;
     margin-bottom:10px;
+}
+
+#servicestable{
+    width: 80%;
+    margin: auto;
+}
+
+.imgicons{
+    cursor: pointer;
+}
+
+#editMyServiceform{
+    /* width: 50%;
+    margin: 12px auto 0px auto;
+    background-color: rgb(165, 171, 173);
+    border-radius: 15px;
+    padding-bottom: 30px; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.editpopup{
+    background: rgb(240, 255, 252);
+    padding: 10px;
+    border-color:rgb(121, 28, 28);
+    border-radius: 10px;
+  }
+
+.cleartext{
+    font-size: large;
+    color: brown;
+    cursor: pointer;
+}
+
+.clicktext{
+    font-size: medium;
+    color: brown;
+    cursor: pointer;
 }
